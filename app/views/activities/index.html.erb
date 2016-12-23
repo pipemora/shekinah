@@ -1,0 +1,143 @@
+<div id="page-content">
+<!-- Slider -->
+<!-- Homepage Slider -->
+
+
+
+<!-- Content -->
+<div class="block">
+    <div class="container">
+        <div class="row">
+        <!--SIDEBAR Content-->
+            <div class="col-md-4">
+                <div id="page-sidebar" class="sidebar">
+
+                                      <aside class="news-small" id="news-small">
+                        
+                        <div class="section-content">
+                    
+
+                    <article>
+
+
+                               
+                        <ul class="element-framed">
+                        <header>
+                            <h2>Matriculas Abiertas</h2>
+                        </header>
+
+                            <li>Horario de 9:00 a.m. - 2:00 p.m.</li>
+                            <li>Del 5 de Octubre al 15 de Diciembre de 2014 y del 19 Enero en adelante. </li>
+                            <li>Carrera 14 A No. 70-32</li>
+                            <li> Teléfonos:  2172018 - 2172427</li>
+                            <br>
+                            <p>No hay Bono</p>
+                            <li>Formulario de Inscripción</li>
+                            <li>Examen de Valoración</li>
+                            <br>
+
+                            <p><%= link_to 'Leer Más', static_pages_contact_path%></p>
+
+
+                        <h1></h1>
+
+                         <header>
+                            <h2>Nivel Superior</h2>
+                        </header>
+                        <p>Los resultados del ICFES 2.014 fueron excelentes, ocupando los primeros puestos 
+                        varios de nuestros estudiantes entre grupos de 1.000. </p>
+
+                        <p>Nuestro estudiante Luis Pablo Lesport ocupó el 8º Puesto a nivel nacional en las Pruebas ICFES 2008.</p>
+
+                        <p><%= link_to 'Leer Más', static_pages_contact_path%></p>
+
+                    
+
+                                                    <h1></h1>
+
+
+                        <header>
+                            <h2>Por un mundo mejor </h2>
+                        </header>
+
+                        <h4> Contiene los cuatro pilares de la Educación:</h4>
+                            <li>Aprender a Conocer.</li>
+                            <li>Aprender a Hacer.</li>
+                            <li>Aprender a Convivir juntos.</li>
+                            <li>Aprender a SER.</li>
+
+
+
+                        </ul>
+
+                                
+                            </article><!-- /article -->
+                            
+                        </div><!-- /.section-content -->
+                        
+                    </aside><!-- /.news-small -->
+
+                    
+
+
+
+                    
+                
+                   
+                </div><!-- /#sidebar -->
+        </div><!-- /.col-md-4 -->
+            <div class="col-md-8">
+                <section class="events" id="events">
+                     <ul class="element-framed">
+                        <header><h2>Actividades</h2></header>
+
+                        <br><br>
+                        
+                        <div class="section-content">
+                        <% @activities.each do |activity| %>
+
+                            <article class="event">
+                                <figure class="date">
+                                    <div class="month"><%= activity.mes %></div>
+                                    <div class="day"><%= activity.dia %></div>
+                                </figure>
+                                <aside>
+                                    <header>
+                                        <a ><%= activity.name %></a>
+                                    </header>
+                                   
+                                    <div class="description">
+                                        <p><%= activity.description %>
+                                        </p>
+                                    </div>
+                                    
+                                </aside>
+                            </article><!-- /article -->
+                        <%end%>
+ </ul>
+                            
+                        </div><!-- /.section-content -->
+                    </section><!-- /.events -->
+                    <div class="center">
+                        <ul class="pagination">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+            </div><!-- /.col-md-6 -->
+
+            
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>
+<!-- end Content -->
+
+ 
+
+ 
+</div>
+
+
+
+

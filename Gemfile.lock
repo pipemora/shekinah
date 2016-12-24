@@ -191,9 +191,9 @@ DEPENDENCIES
   dynamic_sitemaps
   jbuilder (~> 1.2)
   jquery-rails
-  pg
+  pg (= 0.15.1)
   rails (= 4.0.2)
-  rails_12factor (= 0.0.2)
+  rails_12factor
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
